@@ -1,0 +1,116 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: hsl(0deg, 0%, 95%);
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+}
+
+main {
+  margin: 88px 24px;
+  display: grid;
+}
+
+.sedan {
+  background-color: hsl(31deg, 77%, 52%);
+  border-radius: 8px 8px 0 0;
+}
+
+.suv {
+  background-color: hsl(184deg, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179deg, 100%, 13%);
+  border-radius: 0 0 8px 8px;
+}
+
+.card {
+  padding: 48px 49px;
+}
+.card__heading {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+  color: hsl(0deg, 0%, 95%);
+  margin-top: 35px;
+  margin-bottom: 0;
+}
+.card__para {
+  font-weight: 400;
+  font-size: 0.938rem;
+  line-height: 1.563rem;
+  color: hsl(0deg, 0%, 100%);
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+.card__button {
+  background: hsl(0deg, 0%, 95%);
+  border-radius: 25px;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.938rem;
+  line-height: 1.563rem;
+  padding: 11px 31.5px 12px;
+  margin-top: 25px;
+  border: 2px solid hsl(0deg, 0%, 100%);
+}
+.card__button:hover {
+  border: 2px solid hsl(0deg, 0%, 100%);
+  cursor: pointer;
+  color: hsl(0deg, 0%, 100%);
+}
+.card__button--sedan {
+  color: hsl(31deg, 77%, 52%);
+}
+.card__button--sedan:hover {
+  background-color: hsl(31deg, 77%, 52%);
+}
+.card__button--suv {
+  color: hsl(184deg, 100%, 22%);
+}
+.card__button--suv:hover {
+  background-color: hsl(184deg, 100%, 22%);
+}
+.card__button--luxury {
+  color: hsl(179deg, 100%, 13%);
+}
+.card__button--luxury:hover {
+  background-color: hsl(179deg, 100%, 13%);
+}
+
+@media (min-width: 1440px) {
+  main {
+    margin: 171px 260px 129px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .sedan {
+    border-radius: 8px 0 0 8px;
+  }
+  .luxury {
+    border-radius: 0 8px 8px 0;
+  }
+  .card {
+    padding: 48px;
+  }
+  .card__button {
+    margin-top: 83px;
+  }
+}/*# sourceMappingURL=styles.css.map */
